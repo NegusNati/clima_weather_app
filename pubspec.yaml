@@ -1,5 +1,5 @@
 name: clima_weather_app
-description: A new Flutter project,that use live Web API to give Weather on automatically from GPS and also based on input city name 
+description: A new Flutter project,that use live Web API to give Weather on automatically from GPS and also based on input city name!
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
