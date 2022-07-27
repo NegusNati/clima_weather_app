@@ -1,16 +1,7 @@
-# clima_weather_app
+# Clima Weather
 
-A new Flutter project.
+A new Flutter project,that use live Web API to give current & accurate Weather Description and temprature using GPS automatically from your phone or/and also based on your preferd input city name in the world!
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
