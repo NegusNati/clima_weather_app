@@ -6,7 +6,7 @@ class NetworkingHelper {
 
   final String url;
 
- Future getData() async {
+  Future getData() async {
     var urlCorrect = Uri.parse(url);
     http.Response response = await http.get(urlCorrect);
 
