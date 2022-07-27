@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 
-class Location  {
-   late double latitude;
-    late double longtiude;
-    
+class Location {
+  late double latitude;
+  late double longtiude;
+    Future<void> checkGPSEnabled() async {
+      bool servicestatus = await Geolocator.isLocationServiceEnabled();
+
+      if (servicestatus) {
+        print("GPS service is enabled");
+      } else {
+        print("GPS service is disabled.");
+      }
+    }
+
   Future<void> getCurrentLocation() async {
-   
     bool serviceEnabled;
     LocationPermission permission;
 
@@ -28,9 +36,11 @@ class Location  {
           'Location permissions are permanently denied, we cannot request permissions.');
     }
 
+    
+
     try {
       Position position = await Geolocator.getCurrentPosition(
-          desiredAccuracy: LocationAccuracy.low);
+          desiredAccuracy: LocationAccuracy.medium);
       latitude = position.latitude;
       longtiude = position.longitude;
       print('on the Location class $position');
@@ -38,6 +48,4 @@ class Location  {
       print(e);
     }
   }
-
-  
 }
